@@ -84,14 +84,14 @@ article > .twoblocks > .main_img {
     aspect-ratio: 1/1;
 }
 
-@media (min-width: 720px) {
+@media (min-width: 721px) {
     article > .twoblocks > div {
         width: 50%;
     }
 
 }
 
-@media (max-width: 719px) {
+@media (max-width: 720px) {
     article > .twoblocks {
         flex-direction: column;
     }
