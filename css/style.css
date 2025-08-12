@@ -48,13 +48,9 @@ article {
 
 article > .twoblocks {
     display: flex;
-    height: calc(var(--vh, 1vh)* 100 - var(--rytm)*2 - var(--height));
+    height: calc(var(--vh, 1vh)* 100 - var(--rytm)*2 - var(--height)); 
     margin-top: var(--rytm);
     gap: var(--rytm);
-}
-
-article > .twoblocks > div {
-    position: relative;
 }
 
 article > .twoblocks > .main_text {
@@ -80,7 +76,6 @@ article > .twoblocks > .main_img {
     background-position: 50% 0%;
     background-size: cover;
     border-radius: var(--radius);
-    height: inherit;
     aspect-ratio: 1/1;
 }
 
@@ -88,7 +83,6 @@ article > .twoblocks > .main_img {
     article > .twoblocks > div {
         width: 50%;
     }
-
 }
 
 @media (max-width: 720px) {
