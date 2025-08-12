@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "Gotham Pro Regular";
+  font-display: swap;
+  src: local("GothamProRegular"), local("Gotham Pro Regular"), local("GothamPro-Regular");
+  src: url("GothamPro-Regular.woff") format("woff"), url("GothamPro-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gotham Pro Bold";
+  font-display: swap;
+  src: local("GothamProBold"), local("Gotham Pro Bold"), local("GothamPro-Bold");
+  src: url("GothamPro-Bold.woff") format("woff"), url("GothamPro-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
