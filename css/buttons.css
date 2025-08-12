@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+.button {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    padding: 0 var(--indentation);
+    border-radius: var(--radius);
+    height: clamp(3rem, 4vw, 5rem);
+}
+
+.button.button-blue {
+    background-color: var(--black);
+}
+
+.button.no-border {
+    border: 0;
+}
+
+.button.text > span {
+    font-family: var(--font-family);
+    font-size: var(--font-size);
+    font-weight: 700;
+    color: var(--white);
+}

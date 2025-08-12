@@ -1,0 +1,122 @@
+@charset "UTF-8";
+
+.wrapper > .workspace > header {
+    position: sticky;
+    width: 100%;
+    height: clamp(7rem, 9vw, 11rem);
+    /*padding: 0 clamp(2rem, 3vw, 4rem);*/
+}
+
+.wrapper > .workspace > header > .center {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--white);
+    height: clamp(7rem, 9vw, 11rem);
+    box-shadow: 0 .5rem 1.25rem 0 rgba(0, 0, 0, .1);
+    padding: clamp(1.5rem, 2.25vw, 3rem) clamp(2rem, 3vw, 4rem);
+}
+
+.wrapper > .workspace > header > .center > .logo {
+    align-items: inherit;
+}
+
+.wrapper > .workspace > header > .center > div {
+    display: flex;
+    align-items: center;
+}
+
+.wrapper > .workspace > header > .center > div > ul:not(.burger) {
+    display: flex;
+    list-style: none;
+}
+
+.wrapper > .workspace > header > .center > div > ul:not(.burger)  > li {
+    margin: 0 clamp(.5rem, 1vw, 1.5rem);
+    font-size: var(--font-size);
+}
+
+.wrapper > .workspace > header > .center > div > .burger {
+    display: block;
+    position: relative;
+    margin: 0;
+    list-style: none;
+    width: clamp(3rem, 3.5vw, 4rem);
+    height: clamp(3rem, 3.5vw, 4rem);
+    overflow: hidden;
+    transform: scale(.75);
+}
+
+.wrapper > .workspace > header > .center > div > .burger > li {
+    position: absolute;
+    right: 0;
+    height: 2px;
+    margin-bottom: 0 !important;
+    background-color: var(--blue);
+}
+
+.wrapper > .workspace > header > .center > div > .burger:not(.active) > li:first-child {
+  width: clamp(3rem, 3.5vw, 4rem);
+  top: calc(50% - clamp(.75rem, .825vw, 1rem));
+}
+
+.wrapper > .workspace > header > .center > div > .burger:not(.active) > li + li {
+  width: calc(clamp(3rem, 3.5vw, 4rem)/2);
+  top: calc(50% + clamp(.75rem, .825vw, 1rem));
+}
+
+.center {
+    width: 100%;
+    max-width: 240rem;
+    margin: 0 auto;
+    border-radius: var(--radius);
+}
+
+@media (min-width : 1201px) {
+    .wrapper > .workspace > header > .center > div > ul:not(.burger)  {
+        display: flex;
+    }
+    
+    .wrapper > .workspace > header > .center > div > .burger {
+        display: none;
+    }
+}
+
+@media (min-width : 961px) and (max-width : 1200px) {
+    .wrapper > .workspace > header > .center > div > ul:not(.burger)  {
+        display: flex;
+    }
+    
+    .wrapper > .workspace > header > .center > div > .burger {
+        display: none;
+    }
+}
+
+@media (min-width : 721px) and (max-width : 960px) {
+    .wrapper > .workspace > header > .center > div > ul:not(.burger)  {
+        display: flex;
+    }
+    
+    .wrapper > .workspace > header > .center > div > .burger {
+        display: none;
+    }
+}
+
+@media (min-width : 481px) and (max-width : 720px) {
+    .wrapper > .workspace > header > .center > div > ul:not(.burger)  {
+        display: none;
+    }
+    
+    .wrapper > .workspace > header > .center > div > .burger {
+        display: block;
+    }
+}
+
+@media (max-width : 480px) {
+    .wrapper > .workspace > header > .center > div > ul:not(.burger)  {
+        display: none;
+    }
+    
+    .wrapper > .workspace > header > .center > div > .burger {
+        display: block;
+    }
+}
