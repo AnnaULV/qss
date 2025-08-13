@@ -3,8 +3,7 @@
 .wrapper > .workspace > header {
     position: sticky;
     width: 100%;
-    height: clamp(7rem, 9vw, 11rem);
-    /*padding: 0 clamp(2rem, 3vw, 4rem);*/
+    height: clamp(8rem, 9.5vw, 11rem);
 }
 
 .wrapper > .workspace > header > .center {
