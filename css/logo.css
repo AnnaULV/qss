@@ -2,7 +2,6 @@
 
 .logo {
     display: flex;
-    aspect-ratio: 21/8;
 }
 
 .logo > .im_logo div,
