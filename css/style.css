@@ -18,6 +18,7 @@ html {
 body {
     font-family: "Gotham Pro", sans-serif;
     /*background-color: #F3F4F8;*/
+    font-size: clamp(1.75rem, 1.875vw, 2rem);
     background-color: #FFF;
     color: #4f4f4f;
 }
@@ -48,8 +49,8 @@ article {
 
 article > .twoblocks {
     display: flex;
-    /*height: calc(var(--vh, 1vh)* 100 - var(--rytm)*2 - var(--height)); */
     margin-top: var(--rytm);
+    margin-bottom: var(--rytm);
     gap: var(--rytm);
 }
 
@@ -62,6 +63,7 @@ article > .twoblocks > .main_text {
 article > .twoblocks > .main_text > span {
     font-size: clamp(3.5rem, 5vw, 6.5rem);
     font-weight: 700;
+    margin-bottom: calc(clamp(2rem, 3vw, 4rem)/2);
 }
 
 article > .twoblocks > .main_text > blockquote {
@@ -79,9 +81,41 @@ article > .twoblocks > .main_img {
     aspect-ratio: 1/1;
 }
 
+.features {
+    margin-top: var(--rytm);
+}
+
+.features > ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: clamp(2rem, 3vw, 4rem);
+    justify-content: space-between;
+}
+
+.features > ul > li > span:first-child {
+    content: "";
+    background-repeat: no-repeat;
+    background-size: contain;
+     width: 3.5rem;
+    height: 3.5rem;
+    display: block;
+    margin-bottom: calc(var(--rytm) / 2);
+}
+
+.features > ul > li > span:last-child {
+    font-size: clamp(2rem, 2.5vw, 3rem);
+}
+
 @media (min-width: 721px) {
     article > .twoblocks > div {
         width: 50%;
+    }
+
+    .features > ul > li {
+        width: calc(100%/4 - clamp(2rem, 3vw, 4rem));
     }
 }
 
@@ -89,9 +123,13 @@ article > .twoblocks > .main_img {
     article > .twoblocks {
         flex-direction: column;
     }
-    
+
     article > .twoblocks > div {
         width: 100%;
         margin-top: var(--rytm);
+    }
+    
+    .features > ul > li {
+        width: 100%;
     }
 }
