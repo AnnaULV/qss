@@ -4,13 +4,13 @@
     position: relative;
     display: inline-flex;
     align-items: center;
-    padding: 0 var(--indentation);
+    padding: 0 var(--rytm);
     border-radius: var(--radius);
     height: clamp(4rem, 4.5vw, 5rem);
 }
 
 .button.button-blue {
-    background-color: var(--black);
+    background-color: var(--blue);
 }
 
 .button.no-border {
