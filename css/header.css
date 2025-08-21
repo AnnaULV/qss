@@ -14,16 +14,11 @@
 .wrapper > .workspace > header > .center {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .wrapper > .workspace > header > .center > .logo {
-    align-items: inherit;
     height: clamp(4rem, 4.5vw, 5rem);
-}
-
-.wrapper > .workspace > header > .center > div {
-    display: flex;
-    align-items: center;
 }
 
 .wrapper > .workspace > header > .center > div > ul:not(.burger) {
