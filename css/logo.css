@@ -11,7 +11,7 @@ div > .im_logo {
 }
 
 .logo > .im_logo {
-    background-color: var(--black);
+    background-color: var(--fuchsia);
     height: 100%;
     aspect-ratio: 1/1;
 }
@@ -47,7 +47,7 @@ div > .im_logo {
 }
 
 .logo > .im_logo > .ap > div {
-    background-color: var(--black);
+    background-color: var(--blue);
     width: 50%;
     height: 50%;
     position: relative;
