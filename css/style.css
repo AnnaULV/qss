@@ -81,6 +81,7 @@ article > .twoblocks > .main_text > blockquote {
 
 .fuchsia {
     color: var(--fuchsia);
+    font-weight: 800;
 }
 
 article > .twoblocks > .main_text > blockquote > .fuchsia {
