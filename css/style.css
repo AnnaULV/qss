@@ -165,7 +165,7 @@ article > .twoblocks > .main_img {
 }
 
 .subscription > .list > ul > li > span:first-child {
-    background-image: url(../image/icons8-%D0%B3%D0%B0%D0%BB%D0%BE%D1%87%D0%BA%D0%B0-50.png);
+    background-image: url(../image/galo.png);
     content: "";
     background-repeat: no-repeat;
     background-size: contain;
