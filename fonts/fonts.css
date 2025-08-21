@@ -33,6 +33,14 @@
 }
 
 @font-face {
+    font-family: "Open Sans Extra Bold";
+    font-display: swap;
+    src: local("Open Sans Extra Bold"), local("OpenSansExtraBold"), url("opensansextrabold.woff2") format("woff2"), url("opensansextrabold.woff") format("woff"), url("opensansextrabold.ttf") format("truetype");
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
     font-family: "Gotham Pro Bold";
     font-display: swap;
     src: local("GothamProBold"), local("Gotham Pro Bold"), local("GothamPro-Bold");
