@@ -17,7 +17,7 @@
 }
 
 @font-face {
-    font-family: "Open Sans Semi-Bold";
+    font-family: "Open Sans";
     font-display: swap;
     src: local("Open Sans Semi-Bold"), local("OpenSansSemi-Bold"), url("opensanssemibold.woff2") format("woff2"), url("opensanssemibold.woff") format("woff"), url("opensanssemibold.ttf") format("truetype");
     font-weight: 600;
@@ -25,7 +25,7 @@
 }
 
 @font-face {
-    font-family: "Open Sans Bold";
+    font-family: "Open Sans";
     font-display: swap;
     src: local("Open Sans Bold"), local("OpenSans-Bold"), url("opensansbold.woff2") format("woff2"), url("opensansbold.woff") format("woff"), url("opensansbold.ttf") format("truetype");
     font-weight: 700;
@@ -33,18 +33,10 @@
 }
 
 @font-face {
-    font-family: "Open Sans Extra Bold";
+    font-family: "Open Sans";
     font-display: swap;
     src: local("Open Sans Extra Bold"), local("OpenSansExtraBold"), url("opensansextrabold.woff2") format("woff2"), url("opensansextrabold.woff") format("woff"), url("opensansextrabold.ttf") format("truetype");
     font-weight: 800;
     font-style: normal;
 }
 
-@font-face {
-    font-family: "Gotham Pro Bold";
-    font-display: swap;
-    src: local("GothamProBold"), local("Gotham Pro Bold"), local("GothamPro-Bold");
-    src: url("GothamPro-Bold.woff") format("woff"), url("GothamPro-Bold.woff2") format("woff2");
-    font-weight: 700;
-    font-style: normal;
-}
