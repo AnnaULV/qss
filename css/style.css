@@ -70,22 +70,19 @@ article > .twoblocks > .main_text {
 article > .twoblocks > .main_text > span {
     font-size: clamp(3rem, 5vw, 7rem);
     line-height: 1;
-    font-weight: 700;
 }
 
 article > .twoblocks > .main_text > blockquote {
-    font-size: clamp(2.5rem, 3.75vw, 5rem);
+    font-size: clamp(2rem, 2.5vw, 3rem);
     line-height: 1;
     margin-top: var(--rytm);
 }
 
 .fuchsia {
     color: var(--fuchsia);
-    font-weight: 800;
 }
 
-article > .twoblocks > .main_text > blockquote > .fuchsia {
-    color: var(--fuchsia);
+.weight {
     font-weight: 600;
 }
 
@@ -129,7 +126,7 @@ article > .twoblocks > .main_img {
 }
 
 .features > ul > li > span:last-child {
-    font-size: clamp(2rem, 2.5vw, 3rem);
+    font-size: clamp(2rem, 2.25vw, 2.5rem);
     margin-left: var(--rytm);
 }
 
@@ -143,7 +140,7 @@ article > .twoblocks > .main_img {
 }
 
 .subscription > div:first-child {
-    font-size: clamp(2.5rem, 3.75vw, 5rem);
+    font-size: clamp(2.5rem, 2.75vw, 3rem);
     line-height: 1.1;
 }
 
@@ -157,7 +154,6 @@ article > .twoblocks > .main_img {
     list-style: none;
     display: flex;
     flex-direction: column;
-    gap: calc(var(--rytm)/2);
 }
 
 .subscription > .list > ul > li {
@@ -209,6 +205,7 @@ article > .twoblocks > .main_img {
 
     .subscription > .list > ul {
         width: 50%;
+        gap: calc(var(--rytm)/2);
     }
 }
 
@@ -245,6 +242,10 @@ article > .twoblocks > .main_img {
 
     .subscription > .list > ul {
         width: 100%;
+        gap: var(--rytm);
+    }
+    
+    .subscription > .list > ul:last-child {
         margin-top: calc(var(--rytm)/2);
     }
 }
